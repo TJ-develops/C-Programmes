@@ -23,14 +23,14 @@ int main(){
 }
 
 void namaste(){
-printf("Namaste\n");
+printf("Namaste!\n");
 }
 void bonjour(){
-printf("Bonjour\n");
+printf("Bonjour!\n");
 }
 void hola(){
-printf("Hola\n");
+printf("Hola!\n");
 }
 void konichiwa(){ 
-printf("Konichiwa\n");
+printf("Konichiwa!\n");
 }
