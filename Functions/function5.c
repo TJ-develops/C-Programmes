@@ -1,14 +1,15 @@
 #include<stdio.h>
+// Function to convert Celsius to Fahrenheit
 float convertemp(float celcius);
 int main (){
     float Celcius;
-    printf("Enter Temperatur in Celcius:");
-    scanf("%f", & Celcius);
-
- float Farenheit = convertemp(Celcius);
- printf("Farenheit : %f\n", Farenheit);
+    printf("Enter Temperature in Celsius:"); // Prompt user for input
+    scanf("%f", &Celcius);
+    float Fahrenheit = convertemp(Celcius); // Convert Celsius to Fahrenheit
+    printf("Fahrenheit: %f\n", Fahrenheit); // Display result
 }
+// Converts Celsius to Fahrenheit
 float convertemp(float celcius){
-    float Farenheit = celcius *(9/5) + 32;
-    return Farenheit;
+    float Fahrenheit = celcius * (9.0/5.0) + 32; // Use floating-point division
+    return Fahrenheit;
 }
