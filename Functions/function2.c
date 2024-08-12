@@ -1,36 +1,39 @@
 #include<stdio.h>
-void namaste();
+// Function prototypes
+void namaste();    
 void bonjour();
-void hola();
-void konichiwa();
+void hola();       
+void konichiwa();  
 
 int main(){
-    printf("Enter i for indian, f for french, s for spanish & j for japanese :");
+    // enter a character
+    printf("Enter i for Indian, f for French, s for Spanish & j for Japanese :");
     char ch;
     scanf("%c", &ch);
+    // Check which character was entered and call the function
     if(ch == 'i'){
-        namaste();
+        namaste();  
     }
-     if(ch == 's'){
-        hola();
+    if(ch == 's'){
+        hola();     
     }
-     if(ch == 'f'){
-        bonjour();
+    if(ch == 'f'){
+        bonjour(); 
     }
-     if(ch == 'j'){
-        konichiwa();
+    if(ch == 'j'){
+        konichiwa(); 
     }
 }
-
+// Function definitions
 void namaste(){
-printf("Namaste!\n");
+    printf("Namaste!\n");  
 }
 void bonjour(){
-printf("Bonjour!\n");
+    printf("Bonjour!\n"); 
 }
 void hola(){
-printf("Hola!\n");
+    printf("Hola!\n");     
 }
-void konichiwa(){ 
-printf("Konichiwa!\n");
+void konichiwa(){
+    printf("Konichiwa!\n");  
 }
