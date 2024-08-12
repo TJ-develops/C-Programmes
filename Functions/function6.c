@@ -1,14 +1,25 @@
 #include<stdio.h>
-float convertemp(float celcius);
-int main (){
-    float Celcius;
-    printf("Enter Temperatur in Celcius:");
-    scanf("%f", & Celcius);
 
- float Farenheit = convertemp(Celcius);
- printf("Farenheit : %f\n", Farenheit);
+int percent(int phy, int chem, int math);
+
+int main(){
+    printf("Enter your Grades Below\n");
+
+    int phy;
+    printf("Physics:");
+    scanf("%d", &phy);
+
+    int chem;
+    printf("Chemistry:");
+    scanf("%d", &chem);
+
+    int math;
+    printf("Mathematics:");
+    scanf("%d", &math);
+
+printf("Your Percentage is: %d\n", percent( phy, chem, math));
 }
-float convertemp(float celcius){
-    float Farenheit = celcius *(9/5) + 32;
-    return Farenheit;
+int percent(int phy, int chem, int math){
+
+    return (( phy + chem + math)/3);
 }

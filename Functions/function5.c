@@ -1,14 +1,14 @@
-#include <stdio.h>
-#include <math.h>
+#include<stdio.h>
+float convertemp(float celcius);
+int main (){
+    float Celcius;
+    printf("Enter Temperatur in Celcius:");
+    scanf("%f", & Celcius);
 
-int squarearea(int side);
-
-int main() {
-    int a = 6;
-    int area = squarearea(a);
-    printf("Area is : %d\n", area);
-    return 0;
+ float Farenheit = convertemp(Celcius);
+ printf("Farenheit : %f\n", Farenheit);
 }
-int squarearea(int side) {
-    return side * side;
+float convertemp(float celcius){
+    float Farenheit = celcius *(9/5) + 32;
+    return Farenheit;
 }

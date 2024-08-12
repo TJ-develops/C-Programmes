@@ -1,13 +1,13 @@
-<<<<<<< HEAD
 #include<stdio.h>
-int sum(int a , int b)
+void Calculatorprice(float value);
 int main(){
-    int a,b
-    printf("Enter first Number :");
-    scanf("%d",&a);
-     printf("Enter second Number :");
-    scanf("%d",&b);
+    float value;
+    printf("Enter the amount:");
+    scanf("%f", &value);
+    Calculatorprice(value);
 }
-int sum(int a, int b){
-    return=x+y;
+
+void Calculatorprice(float value){
+    value=value + (0.18*value);
+    printf("Final Price after GST is : %f\n",  value);
 }

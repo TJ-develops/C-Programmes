@@ -1,13 +1,14 @@
-#include<stdio.h>
-void Calculatorprice(float value);
-int main(){
-    float value;
-    printf("Enter the amount:");
-    scanf("%f", &value);
-    Calculatorprice(value);
-}
+#include <stdio.h>
+#include <math.h>
 
-void Calculatorprice(float value){
-    value=value + (0.18*value);
-    printf("Final Price after GST is : %f\n",  value);
+int squarearea(int side);
+
+int main() {
+    int a = 6;
+    int area = squarearea(a);
+    printf("Area is : %d\n", area);
+    return 0;
+}
+int squarearea(int side) {
+    return side * side;
 }
